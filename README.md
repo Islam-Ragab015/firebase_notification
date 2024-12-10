@@ -1,9 +1,21 @@
-"لو شغال على Flutter ومحتاج تضيف Push Notifications باستخدام Firebase، فـ أنا مؤخرًا عملت كلاس جامد جدًا بيلخص كل حاجة! 🔥 
+# Firebase Push Notifications Handler
 
-الكلاس ده بيهاندل النوتيفيكيشنز في كل الحالات: 
-- لو الابلكيشن شغال في الـ Foreground 
-- لو الابلكيشن في الـ Background 
-- وكمان لو الابلكيشن مقفول تمامًا 
-- وكمان مستخدم Local Notification عشان يظهر ال notification وانت فاتح ال app
+A comprehensive Dart class for handling **Firebase Push Notifications** in a Flutter app. This service manages notifications seamlessly in all states:
 
-كل الـ complexities بتاعة النوتيفيكيشنز اتحولت لكود بسيط وسهل تستخدمه في أي مشروع. 🛠️
+- **Foreground**: Notifications are displayed while the app is active.
+- **Background**: Notifications are handled when the app is minimized.
+- **Terminated**: Notifications work even when the app is completely closed.
+
+Additionally, it integrates **Local Notifications** to display alerts while the app is in use, making the implementation straightforward and reusable for any Flutter project. 🛠️
+
+---
+
+## 🚀 Features
+
+- **Handles All Notification States**:
+  - Foreground
+  - Background
+  - Terminated
+- **Local Notifications**: Displays notifications inside the app using `flutter_local_notifications`.
+- **Easy Integration**: Modular and reusable for any Flutter project.
+- **FCM Token Support**: Fetches and prints the Firebase Cloud Messaging token for device-specific notifications.
